@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.my_calculator.ui.theme.CalculatorViewModel
 import com.example.my_calculator.ui.theme.My_CalculatorTheme
 
@@ -21,7 +22,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             My_CalculatorTheme {
 
-              val viewModel=view
+              val viewModel= viewModel<CalculatorViewModel>()
 
                 val buttonSpacing=8.dp
             }
