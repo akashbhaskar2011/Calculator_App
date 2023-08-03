@@ -5,6 +5,6 @@ sealed class CalculatorActions {
     object Clear:CalculatorActions()
     object  Delete:CalculatorActions()
     object Decimal:CalculatorActions()
-    object Calculations:CalculatorActions()
+    object Calculate:CalculatorActions()
     data class Operations(val Operation:CalculatorOperation):CalculatorActions()
 }
